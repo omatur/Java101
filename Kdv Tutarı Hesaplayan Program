@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    //Kullanıcıdan bir para değeri alcaz. Bunun kdv li fiyatını ve kdv tutarını söyleyen program. %18 kdv.
+
+        Scanner okur = new Scanner(System.in);
+        float para,kdv,toplam;
+        System.out.println("para gir");
+        para=okur.nextFloat();
+        kdv=(para/100)*18;
+        toplam=para+kdv;
+        System.out.println("kdv tutarı: " + kdv);
+        System.out.println("kdv dahil toplam tutar: " +toplam);
+
+
+    }
+}
