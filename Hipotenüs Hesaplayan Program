@@ -1,0 +1,15 @@
+import java.util.Scanner;
+//Dik kenarlar verilince hipotenüsü bulan program.
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        double dk1,dk2,hipotenus;
+        System.out.println("İlk dik kenarı giriniz");
+        dk1=reader.nextDouble();
+        System.out.println("İkinci dik kenarı giriniz");
+        dk2=reader.nextDouble();
+        hipotenus=Math.sqrt((dk1*dk1)+(dk2*dk2));
+        System.out.println(hipotenus);
+    }
+}
