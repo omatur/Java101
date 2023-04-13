@@ -1,0 +1,17 @@
+import java.util.Scanner;
+//Dairenin Alanını ve Çevresini Bulan Program
+
+public class Main {
+    public static void main(String[] args) {
+        double r,alan,cevre;
+        Scanner okur=new Scanner(System.in);
+        System.out.println("Dairenin yarıçapını giriniz");
+        r= okur.nextDouble();
+        alan=3*r*r;
+        cevre=2*3*r;
+        System.out.println("Alan" + alan);
+        System.out.println("Çevre" + cevre);
+
+
+    }
+}
