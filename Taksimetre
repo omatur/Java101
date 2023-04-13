@@ -1,0 +1,14 @@
+import java.util.Scanner;
+//Taksimetre. Km başına 2.20 lira. Minimum ödenecek tutar 20 tl, bunun altındaki tutarlarda da 20 tl alınacaktır.
+//Açılış ücreti 10 lira
+
+public class Main {
+    public static void main(String[] args) {
+        double km,toplamucret;
+        Scanner oku = new Scanner(System.in);
+        System.out.println("Kaç km gidildi?");
+        km=oku.nextDouble();
+        toplamucret=(km*2.20)+10;
+        System.out.println(toplamucret<20? "Ücret 20 lira":toplamucret);
+    }
+}
