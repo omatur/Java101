@@ -1,0 +1,16 @@
+import java.util.Scanner;
+//Vücut kitle endeksi hesaplayan program
+
+public class Main {
+    public static void main(String[] args) {
+     Scanner oku = new Scanner(System.in);
+     double boy,kilo,vki;
+     System.out.println("Lütfen bounuzu metre cinsinden giriniz");
+     boy=oku.nextDouble();
+     System.out.println("Lütfen kilonuzu giriniz");
+     kilo=oku.nextDouble();
+     vki=kilo/(boy*boy);
+     System.out.println(vki);
+     
+    }
+}
