@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        double sonuc = 0; // 0 ı atamadan sadece "float sonuc" yazınca kod hata verdi.
+        double sayi1, sayi2;
+        int tercih;
+        System.out.println("Sayı 1'i giriniz:");
+        sayi1 = reader.nextInt();
+        System.out.println("Sayı 2'yi giriniz:");
+        sayi2 = reader.nextInt();
+        System.out.println("Hangi işlemi yapmak istiyorsanız başında bulunan sayıyı giriniz:");
+        System.out.println("1-Toplama\n2-Çıkarma\n3-Çarpma\n4-Bölme");
+        tercih = reader.nextInt();
+        switch (tercih) {
+            case 1:
+                sonuc = sayi1 + sayi2;
+                break;
+            case 2:
+                sonuc = sayi1 - sayi2;
+                break;
+            case 3:
+                sonuc = sayi1 * sayi2;
+                break;
+            case 4:
+                if (sayi2 == 0) {
+                    break;
+                }
+                sonuc = sayi1 / sayi2;
+                break;
+            default:
+                System.out.println("Lütfen 1,2,3 veya 4 rakamlarından birisini giriniz.");
+        }
+        if (sayi2 == 0) {
+            System.out.println("Bölen sayı sıfır olmamalı");
+        }
+            System.out.println(sonuc);
+    }
+}
