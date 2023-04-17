@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Main {   //kullanıcı girişi https://academy.patika.dev/courses/java101/pratik-login-1 
+    public static void main(String[] args) {
+        String username, password,newpass;
+        boolean b=false;
+        int a=0;
+        Scanner okur = new Scanner(System.in);
+        System.out.println("Kullanıcı adınız:");
+        username = okur.nextLine();
+        System.out.println("Şifreniz");
+        password = okur.nextLine();
+        if (username.equals("olgun") && password.equals("123")) {
+            System.out.println("Giriş yaptınız");
+        } else {
+            System.out.println("Bilgileriniz yanlış");
+            b=true;
+        }
+        if(b){
+            System.out.println("Şifrenizi sıfırlamak ister misiniz? Evetse 1'e hayırsa 2'ye basın");
+            a=okur.nextInt();
+        }
+        if(a==1){
+            System.out.println("Yeni şifre girin");
+            a=okur.nextInt();
+            if(a==123){
+                System.out.println("Yeni belirlediğiniz şifre eskisinden farklı olmalıdır. Lütfen başka şifre giriniz");
+            }
+            else{
+                System.out.println("Şifre oluşturuldu");
+            }
+        }
+
+    }
+}
