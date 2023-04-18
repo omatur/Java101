@@ -1,4 +1,4 @@
 # Java101
-Patika.com daki java uygulamaları. /n
-Oku beni dosyası ekliyorum. /n
+Patika.com daki java uygulamaları. 
+Oku beni dosyası ekliyorum. 
 Patikadaki temel java kursunun reposudur burası.
