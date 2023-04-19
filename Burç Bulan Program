@@ -1,0 +1,50 @@
+import java.util.Scanner;
+public class Main {
+   // Burç bulan program
+    public static void main(String[] args) {
+       Scanner oku = new Scanner(System.in);
+       int day,month,sum;
+       System.out.println("Doğduğunuz ayı(1-12 aralığında) giriniz: ");
+       month=oku.nextInt();
+        System.out.println("Doğduğunuz günü(1-31 aralığında) giriniz: ");
+       day= oku.nextInt();
+       sum=(month*100)+day;
+       if(sum>=121 && sum<=219){
+           System.out.println("Kova");
+       }
+        if(sum>=220 && sum<=320){
+            System.out.println("Balık");
+        }
+        if(sum>=321 && sum<=420){
+            System.out.println("Koç");
+        }
+        if(sum>=421 && sum<=520){
+            System.out.println("Boğa");
+        }
+        if(sum>=521 && sum<=621){
+            System.out.println("İkizler");
+        }
+        if(sum>=622 && sum<=722){
+            System.out.println("Yengeç");
+        }
+        if(sum>=723 && sum<=823){
+            System.out.println("Aslan");
+        }
+        if(sum>=824 && sum<=923){
+            System.out.println("Başak");
+        }
+        if(sum>=924 && sum<=1023){
+            System.out.println("Terazi");
+        }
+        if(sum>=1024 && sum<=1122){
+            System.out.println("Akrep");
+        }
+        if(sum>=1123 && sum<=1221){
+            System.out.println("Yay");
+        }
+        if((sum>=1222 && sum<=1231) || (sum>=101 && sum<=131)){
+            System.out.println("Oğlak");
+        }
+
+    }
+}
