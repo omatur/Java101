@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Main {
+    //Plane ticket calvulator
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        double distance,price,discount;
+        int age, vacation_type;
+        System.out.println("Please enter the distance from source to destination: ");
+        distance=scn.nextDouble();
+        System.out.println("Please enter your age: ");
+        age=scn.nextInt();
+        System.out.println("If you want to buy one way ticket enter 1, if you want to buy return ticket please enter 2 ");
+        vacation_type=scn.nextInt();
+        price=distance*0.1;
+        if(distance>0&&age>0&&vacation_type>0&&vacation_type<3){
+            if(age<12){
+                price=price/2;
+            }
+            if(age>=12 && age<=24){
+                price=price*0.9;
+            }
+            if(age>65 ){
+                price=price*0.7;
+            }
+            if(vacation_type==2){
+                price=price*0.8;
+                System.out.println("Total Price: " + (price*2));
+            }
+            else{
+                System.out.println("Total Price: " + price);
+            }
+        }
+        else{
+            System.out.println("Please enter valid values.");
+        }
+
+    }
+}
