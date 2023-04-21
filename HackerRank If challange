@@ -1,0 +1,30 @@
+//Burç bulan program dersindeki Hacker Rank if challenge ı. Ancak Hacker Rank'de hata verdi. Yardım için Patika discord grubuna yazdım.
+import java.util.Scanner;
+public class Main {
+    /*If n is odd, print Weird - If n is even and in the inclusive range of 2 to 5, print Not Weird
+    If n is even and in the inclusive range of 6 to 20, print Weird-If n is even and greater than 20, print Not Weird */
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        int a;
+        System.out.println("Enter an integer number which is smaller than 101 and bigger than 0");
+        a=reader.nextInt();
+        if(a>=1 && a<=100){
+            if(a%2==0){
+                if(a>=2 && a<=5){
+                    System.out.println("Not weird");
+                }
+                if(a>=6 && a<=20){
+                    System.out.println("Weird");
+                }
+                if(a>20){
+                    System.out.println("Not Weird");
+                }
+            } else {
+                System.out.println("Weird");
+            }
+        }
+        else{
+            System.out.println("Please enter a number which is in a specified range");
+        }
+    }
+}
