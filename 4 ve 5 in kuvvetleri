@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main {
+    //Girilen sayıya kadar olan 4 ve 5'in kuvvetlerini ekrana yazdıran programı yazıyoruz.
+    public static void main(String[] args) {
+        Scanner kobo = new Scanner(System.in);
+        int a;
+        System.out.println("Bir sayı giriniz");
+        a=kobo.nextInt();
+        System.out.println("4 ün kuvvetleri");
+        for(int i=1;i<a;i*=4){
+            System.out.println(i);
+        }
+        System.out.println("5 in kuvvetleri");
+        for(int i=1;i<a;i*=5){
+            System.out.println(i);
+        }
+    }
+}
