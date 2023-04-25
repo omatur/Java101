@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main {
+   // girilen üs ve tabana göre üslü sayının değerini hesaplayan program
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        int base,exponent,result=1;
+        System.out.println("Üs alma işlemi için taban sayısını giriniz: ");
+        base=reader.nextInt();
+        System.out.println("Üssü giriniz: ");
+        exponent=reader.nextInt();
+        for(int i=1;i<=exponent;i++){
+            result=result*base;
+        }
+        System.out.println("Sonuç: " +result);
+    }
+}
