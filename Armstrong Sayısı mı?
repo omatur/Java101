@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main {
+   // Armstrong sayısı bulan program.Armstrong sayı: Verilen sayı x basamaklı ise her basamaktaki sayının x. üssünün toplamı.
+    //Mesela 4629 için 4^4+6^4+2^4+9^4 işlemi yapılır. Çıkan sonuç 4629 ise sayı armstrong sayısıdır.
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        int number,numOfDigits=0, tempNumber,x,y=1,z=0;  //x-->basamaktan aldığı sayı - y basamaktan alınan sayının üs işlemi
+        System.out.println("Bir sayı giriniz: ");        //z --> toplam
+        number = reader.nextInt();
+        tempNumber=number;
+            while(tempNumber!=0){
+                tempNumber/=10;        //basamak sayısını bulup numOfDigits de tuttuk.
+                numOfDigits++;
+            }
+            tempNumber=number;
+            for(int i=1;i<=numOfDigits;i++){
+                x=tempNumber%10;
+                for(int k=0;k<numOfDigits;k++){
+                y=y*x;
+                }
+                z=z+y;
+                y=1;
+                tempNumber/=10;
+            }
+            System.out.println("Sonuc: "+z);
+            if(number==z){
+                System.out.println("Sayı armstrong sayısıdır");
+            }
+            else {
+                System.out.println("Sayı armstrong sayısı değildir");
+            }
+    }
